@@ -1,0 +1,9 @@
+Property,Value
+Total Images,9144
+Number of Classes,102
+Train Set Size,6400
+Validation Set Size,1372
+Test Set Size,1372
+Image Size (after resize),256x256
+Number of Channels,3
+Augmentation Techniques,6

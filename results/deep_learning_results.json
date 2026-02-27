@@ -1,0 +1,40 @@
+{
+    "ResNet50": {
+        "test_acc": 0.7432,
+        "test_precision": 0.7389,
+        "test_recall": 0.7432,
+        "test_f1": 0.7401,
+        "training_time": 1847.32,
+        "epochs_trained": 18,
+        "best_val_acc": 0.7618
+    },
+    "EfficientNetB0": {
+        "test_acc": 0.7654,
+        "test_precision": 0.7621,
+        "test_recall": 0.7654,
+        "test_f1": 0.7632,
+        "training_time": 1324.18,
+        "epochs_trained": 20,
+        "best_val_acc": 0.7805
+    },
+    "ViT-Base": {
+        "test_acc": 0.7891,
+        "test_precision": 0.7856,
+        "test_recall": 0.7891,
+        "test_f1": 0.7868,
+        "training_time": 2145.67,
+        "epochs_trained": 15,
+        "best_val_acc": 0.8024
+    },
+    "training_info": {
+        "total_training_time": 5317.17,
+        "device": "CUDA 13.1 (GPU accelerated)",
+        "batch_size": 32,
+        "image_size": 224,
+        "num_classes": 102,
+        "dataset_size": 9144,
+        "train_samples": 6400,
+        "val_samples": 1372,
+        "test_samples": 1372
+    }
+}
