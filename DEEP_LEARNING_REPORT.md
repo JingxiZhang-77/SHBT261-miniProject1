@@ -217,6 +217,67 @@ Visualizes the distribution of predictions across all classes, showing both corr
 
 ---
 
+## 2.8 Classical ML vs Deep Learning Comparison
+
+### 2.8.1 Performance Comparison Table
+
+| Method | Test Accuracy | Precision | Recall | F1-Score | Training Time (s) |
+|--------|---|---|---|---|---|
+| **SVM (Classical ML)** | 32.73% | 25.70% | 32.73% | 23.96% | 0.089 |
+| **ViT-Base (Deep)** | 45.70% | 48.58% | 45.70% | 44.97% | 466.70 |
+| **ResNet50 (Deep)** | 89.94% | 90.84% | 85.94% | 89.79% | 272.54 |
+| **EfficientNetB0 (Deep)** | 94.17% | 94.76% | 94.17% | 94.18% | 258.20 |
+
+### 2.8.2 Performance Gap Analysis
+
+| Comparison | Gap | Improvement |
+|------------|-----|---|
+| **EfficientNetB0 vs SVM** | 61.44% | **~188% relative improvement** |
+| **ResNet50 vs SVM** | 57.21% | **~175% relative improvement** |
+| **ViT-Base vs SVM** | 12.97% | **~40% relative improvement** |
+
+### 2.8.3 Key Insights: Classical ML vs Deep Learning
+
+#### Accuracy Advantage
+- **Deep Learning Dominance:** All deep learning models substantially outperform classical SVM
+- **EfficientNetB0 (94.17%)** achieves **61.44 percentage points higher accuracy** than SVM (32.73%)
+- **Even ViT-Base (45.70%)** with underperformance still exceeds SVM by **12.97 percentage points**
+
+#### Feature Representation
+**Classical ML Limitation:**
+- SVM uses hand-crafted features (HOG, SIFT, etc.)
+- Features are fixed regardless of class information
+- Struggles to capture complex visual hierarchies in 101 classes
+
+**Deep Learning Advantage:**
+- Learned feature representations through backpropagation
+- Features automatically optimized for classification task
+- Transfer learning leverages ImageNet pre-training (14M+ labeled images)
+
+#### Scalability to Large Label Space
+- **101 classes:** Classical ML approaches suffer with high-dimensional output space
+- **SVM Precision (25.70%)** indicates many misclassifications across similar classes
+- **Deep Learning:** Neural networks handle 101 classes naturally with better decision boundaries
+
+#### Computational Trade-off
+- **SVM Training:** 0.089 seconds (very fast)
+- **Deep Learning:** 258-467 seconds (5K-5200x slower)
+- **Trade-off Justification:** Massive accuracy improvement (61.44%) worth computational investment
+
+#### Practical Implications
+
+**Classical ML (SVM) Performance:**
+- Only slightly better than random guessing (1/101 = 0.99% random baseline)
+- Not suitable for production use
+- Works better for binary or few-class problems
+
+**Deep Learning Recommendation:**
+- **EfficientNetB0:** 188% relative improvement over SVM, production-ready
+- **ResNet50:** 175% relative improvement, reliable fallback
+- **ViT-Base:** Needs further hyperparameter tuning but shows promise
+
+---
+
 ## 3. Observations & Ablation Studies
 
 ### 3.1 Key Findings
