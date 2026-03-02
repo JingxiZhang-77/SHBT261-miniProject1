@@ -1,0 +1,4 @@
+Model,Test Accuracy,Precision (Weighted),Recall (Weighted),F1-Score (Weighted),Precision (Macro),Recall (Macro),F1-Score (Macro),Top-3 Accuracy,Top-5 Accuracy,Per-Class Mean Accuracy,Per-Class Std Dev,Best Class Accuracy,Worst Class Accuracy,Training Time (seconds),Training Time (minutes)
+ResNet50,0.8994,0.9084,0.8994,0.8979,0.8851,0.8614,0.8644,0.9585,0.9752,0.8614,0.1693,1.0000,0.0000,272.54,4.54
+ViT-Base,0.4570,0.4858,0.4570,0.4497,0.3583,0.3317,0.3258,0.5962,0.6706,0.3317,0.2682,1.0000,0.0000,466.70,7.78
+EfficientNetB0,0.9417,0.9476,0.9417,0.9418,0.9307,0.9228,0.9223,0.9913,0.9956,0.9228,0.1174,1.0000,0.5000,258.20,4.30

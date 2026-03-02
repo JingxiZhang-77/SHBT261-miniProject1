@@ -1,4 +1,2 @@
-model,accuracy,precision,recall,f1_score,training_time_seconds
-SVM (RBF kernel),0.3845,0.3812,0.3845,0.3821,287.43
-Random Forest (100 trees),0.4127,0.4089,0.4127,0.4105,156.73
-k-NN (k=5),0.3654,0.3621,0.3654,0.3632,45.21
+Method,Val Accuracy,Test Accuracy,Precision,Recall,F1-Score,Training Time (s)
+SVM,0.05,0.0,0.0,0.0,0.0,0.022000789642333984
