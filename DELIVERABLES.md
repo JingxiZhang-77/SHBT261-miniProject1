@@ -132,16 +132,6 @@ All figures saved in `/figures/` directory:
 
 ---
 
-## 💾 Saved Models
-
-All trained models saved with best validation accuracy:
-
-- `notebooks/ResNet50_best.pth` (25.5M parameters)
-- `notebooks/EfficientNetB0_best.pth` (5.3M parameters)
-- `notebooks/ViT-Base_best.pth` (86M parameters)
-
----
-
 ## 📊 Results Files
 
 ### Data & Configuration
